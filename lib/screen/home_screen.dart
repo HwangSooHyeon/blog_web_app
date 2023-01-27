@@ -12,6 +12,17 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.orange,
         title: Text('Code Factory'),
         centerTitle: true,
+        actions: [
+          IconButton(
+            onPressed: () {
+              if (controller != null)
+                controller!.loadUrl('https://blog.codefactory.ai');
+            },
+            icon: Icon(
+              Icons.home,
+            ),
+          )
+        ],
       ),
       body: WebView(
         onWebViewCreated: (WebViewController controller) {
