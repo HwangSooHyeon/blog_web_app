@@ -12,16 +12,28 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.orange,
         title: Text('Code Factory'),
         centerTitle: true,
+        leading: IconButton(
+          onPressed: () {
+            if (controller != null)
+              controller!.loadUrl('https://blog.codefactory.ai');
+          },
+          icon: Icon(
+            Icons.home,
+          ),
+        ),
         actions: [
           IconButton(
             onPressed: () {
-              if (controller != null)
-                controller!.loadUrl('https://blog.codefactory.ai');
+              if (controller != null) controller!.goBack();
             },
-            icon: Icon(
-              Icons.home,
-            ),
-          )
+            icon: Icon(Icons.arrow_back_ios),
+          ),
+          IconButton(
+            onPressed: () {
+              if (controller != null) controller!.goForward();
+            },
+            icon: Icon(Icons.arrow_forward_ios),
+          ),
         ],
       ),
       body: WebView(
