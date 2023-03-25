@@ -1,16 +1,30 @@
-# blog_web_app
+# flutter_web_blog_app
 
-A new Flutter project.
+---
 
-## Getting Started
+blog web 어플리케이션
 
-This project is a starting point for a Flutter application.
+## 💻 프로젝트 소개
 
-A few resources to get you started if this is your first Flutter project:
+--- 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+WebView 위젯을 이용해 하이브리드 앱을 만드는 프로젝트
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🕰️ 개발 환경
+
+---
+
+Language: Dart
+
+Framework: Flutter 3
+
+IDE: Android Studio
+
+## ⚙️ 주요 기능
+
+---
+
+### 어플리케이션 부분
+
+- HomeScreen
+  - WebView 위젯을 이용해 특정 url 페이지를 어플리케이션으로 불러오는 기능을 구현
